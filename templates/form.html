@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+Form
+
+{% endblock %}
+{% block content %}
+<div class="container p-10 mx-auto mt-5">
+    <form action="/form" method="post">
+
+    
+        <div class="form-group">
+          <label for="exampleInputEmail1">Reg Number</label>
+          <input type="text" class="form-control"  name="regNum" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+         
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Quiz 1</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="quiz1" placeholder="quiz1">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Quiz 2</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="quiz2" placeholder="quiz2">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Mid Term</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="midTerm" placeholder="midTerm">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Exam</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="exam" placeholder="exam">
+        </div>
+       
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}
